@@ -20,8 +20,6 @@ body.dark {
     color: #e5e7eb;
 }
 
-/* HERO */
-
 .hero {
     background: linear-gradient(135deg, #1c7c54, #3da97a);
     color: white;
@@ -105,8 +103,6 @@ body.dark .hero-tags li {
     justify-content: center;
 }
 
-/* BOUTONS */
-
 .btn {
     display: inline-block;
     padding: 10px 22px;
@@ -135,8 +131,6 @@ body.dark .hero-tags li {
 body.dark .btn-secondary {
     border-color: rgba(255,255,255,0.5);
 }
-
-/* NAV */
 
 nav {
     background: #e8f5ec;
@@ -184,8 +178,6 @@ body.dark nav a:hover {
     color: #6ee7b7;
 }
 
-/* LAYOUT GÉNÉRAL */
-
 main {
     max-width: 1000px;
     margin: auto;
@@ -212,8 +204,6 @@ body.dark h2 {
     opacity: 0.9;
 }
 
-/* CARTES */
-
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -239,8 +229,6 @@ body.dark .card {
     background: #020617;
     border-left-color: #22c55e;
 }
-
-/* OFFRES */
 
 .offer-grid {
     display: grid;
@@ -318,8 +306,6 @@ body:not(.dark) .offer-card {
     padding-inline: 16px;
 }
 
-/* ÉCO, IMPACT, ÉQUIPE, CONTACT */
-
 .eco-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
@@ -378,8 +364,6 @@ body.dark .eco-card.highlight {
 body.dark .team-role {
     color: #9ca3af;
 }
-
-/* CONTACT / FORMULAIRES */
 
 .contact-box {
     max-width: 420px;
@@ -483,8 +467,6 @@ body.dark .form-field textarea:focus {
 .form-feedback.error {
     color: #dc2626;
 }
-
-/* MODAL DE RÉSERVATION */
 
 .modal {
     position: fixed;
