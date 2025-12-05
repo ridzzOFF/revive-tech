@@ -6,175 +6,22 @@
     <title>ReviveTech – Vers un numérique durable</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
+<a href="admin.html" class="admin-badge">Admin</a>
+
 
 <header class="hero">
     <div class="hero-inner">
         <div class="logo-block">
-
-            <!-- LOGOS CLAIR + SOMBRE -->
             <div class="logo-visual">
-
-                <!-- LOGO CLAIR -->
-                <svg class="logo-svg logo-svg-light" viewBox="0 0 300 300"
-                     xmlns="http://www.w3.org/2000/svg">
-
-                    <style>
-                        @keyframes rotateHalo {
-                            from { transform: rotate(0deg); }
-                            to   { transform: rotate(360deg); }
-                        }
-                    </style>
-
-                    <!-- Halo clair (24 segments réguliers) -->
-                    <g style="transform-origin:150px 150px; animation: rotateHalo 14s linear infinite;">
-                        <g stroke="#1c7c54" stroke-width="10" stroke-linecap="round">
-                            <!-- 24 segments à 15° chacun -->
-                            <!-- 0 à 345 -->
-                            <g transform="rotate(0 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(15 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(30 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(45 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(60 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(75 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(90 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(105 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(120 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(135 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(150 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(165 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-
-                            <g transform="rotate(180 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(195 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(210 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(225 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(240 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(255 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(270 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(285 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(300 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(315 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(330 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(345 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                        </g>
-                    </g>
-
-                    <!-- Dégradé clair -->
-                    <defs>
-                        <linearGradient id="leafGradientLight" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="0%" stop-color="#34d399"/>
-                            <stop offset="100%" stop-color="#059669"/>
-                        </linearGradient>
-                    </defs>
-
-                    <!-- Feuille claire -->
-                    <path d="M150 55 C205 75, 245 145, 215 200 C185 255,115 255,85 200 C55 145,95 75,150 55 Z"
-                          fill="url(#leafGradientLight)"
-                          stroke="#064e3b"
-                          stroke-width="6"/>
-
-                    <!-- Veine -->
-                    <line x1="150" y1="90" x2="150" y2="210"
-                          stroke="#064e3b" stroke-width="6"/>
-
-                    <!-- Circuits -->
-                    <line x1="150" y1="115" x2="200" y2="165" stroke="#064e3b" stroke-width="6"/>
-                    <line x1="150" y1="125" x2="100" y2="165" stroke="#064e3b" stroke-width="6"/>
-
-                    <!-- Points -->
-                    <circle cx="150" cy="115" r="9" fill="#bbf7d0"/>
-                    <circle cx="200" cy="165" r="9" fill="#bbf7d0"/>
-                    <circle cx="100" cy="165" r="9" fill="#bbf7d0"/>
-
-                    <!-- Noyau -->
-                    <circle cx="150" cy="175" r="13" fill="#ecfdf5" stroke="#16a34a" stroke-width="4"/>
-
-                </svg>
-
-                <!-- LOGO SOMBRE (COULEURS VALIDÉES) -->
-                <svg class="logo-svg logo-svg-dark" viewBox="0 0 300 300"
-                     xmlns="http://www.w3.org/2000/svg">
-
-                    <style>
-                        @keyframes rotateHaloDark {
-                            from { transform: rotate(0deg); }
-                            to   { transform: rotate(360deg); }
-                        }
-                    </style>
-
-                    <!-- Halo sombre turquoise #14b8a6 -->
-                    <g style="transform-origin:150px 150px; animation: rotateHaloDark 14s linear infinite;">
-                        <g stroke="#14b8a6" stroke-width="10" stroke-linecap="round" opacity="0.85">
-
-                            <!-- 24 segments réguliers -->
-                            <g transform="rotate(0 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(15 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(30 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(45 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(60 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(75 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(90 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(105 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(120 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(135 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(150 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(165 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-
-                            <g transform="rotate(180 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(195 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(210 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(225 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(240 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(255 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(270 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(285 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(300 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(315 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(330 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-                            <g transform="rotate(345 150 150)"><line x1="150" y1="20" x2="150" y2="45"/></g>
-
-                        </g>
-                    </g>
-
-                    <!-- Dégradé sombre amélioré -->
-                    <defs>
-                        <linearGradient id="leafGradientDark" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="0%" stop-color="#0f766e"/>
-                            <stop offset="100%" stop-color="#0a4f4a"/>
-                        </linearGradient>
-                    </defs>
-
-                    <!-- Feuille sombre -->
-                    <path d="M150 55 C205 75, 245 145, 215 200 C185 255,115 255,85 200 C55 145,95 75,150 55 Z"
-                          fill="url(#leafGradientDark)"
-                          stroke="#022c22"
-                          stroke-width="6"/>
-
-                    <!-- Veine -->
-                    <line x1="150" y1="90" x2="150" y2="210"
-                          stroke="#14b8a6" stroke-width="6"/>
-
-                    <!-- Circuits -->
-                    <line x1="150" y1="115" x2="200" y2="165" stroke="#2dd4bf" stroke-width="6"/>
-                    <line x1="150" y1="125" x2="100" y2="165" stroke="#2dd4bf" stroke-width="6"/>
-
-                    <!-- Points -->
-                    <circle cx="150" cy="115" r="9" fill="#5eead4"/>
-                    <circle cx="200" cy="165" r="9" fill="#5eead4"/>
-                    <circle cx="100" cy="165" r="9" fill="#5eead4"/>
-
-                    <!-- Noyau -->
-                    <circle cx="150" cy="175" r="13" fill="#e6fff8" stroke="#10b981" stroke-width="4"/>
-
-                </svg>
+                <img src="IMG_5052.jpeg" alt="Logo ReviveTech" class="logo-img">
             </div>
 
-            <!-- Texte logo -->
             <div class="logo-texts">
                 <h1>ReviveTech</h1>
                 <p class="subtitle">
-                    Redonnons vie aux appareils électroniques. Pour un numérique plus responsable.
+                    Redonnons vie aux appareils électroniques pour un numérique plus responsable en Occitanie.
                 </p>
                 <ul class="hero-tags">
                     <li>Réparation locale</li>
@@ -182,22 +29,19 @@
                     <li>Économie circulaire</li>
                 </ul>
             </div>
-
         </div>
 
-        <!-- Actions -->
         <div class="hero-actions">
-            <a href="#solution" class="btn">Découvrir notre solution</a>
+            <a href="#offres" class="btn">Voir nos offres</a>
             <button id="themeToggle" class="btn btn-secondary" type="button">Mode sombre</button>
         </div>
-
     </div>
 </header>
 
-<!-- NAVIGATION ---------------------------------------------------------------->
 <nav>
     <ul>
         <li><a href="#solution">Solution</a></li>
+        <li><a href="#offres">Offres</a></li>
         <li><a href="#impact">Impact</a></li>
         <li><a href="#eco">Modèle économique</a></li>
         <li><a href="#equipe">Équipe</a></li>
@@ -205,69 +49,244 @@
     </ul>
 </nav>
 
-<!-- CONTENU -------------------------------------------------------------------->
 <main>
     <section id="solution">
         <h2>Notre solution</h2>
         <p class="section-intro">
-            ReviveTech est une plateforme écoresponsable dédiée à la réparation, 
-            la revalorisation et la seconde vie des appareils électroniques.
+            ReviveTech est une plateforme écoresponsable dédiée à la réparation, la revalorisation
+            et la seconde vie des appareils électroniques. Nous connectons particuliers, TPE et
+            associations avec un réseau de réparateurs locaux qualifiés.
         </p>
 
         <div class="cards">
             <div class="card">
                 <h3>Réparation</h3>
-                <p>Diagnostic rapide, réparation locale et pièces durables pour prolonger la vie des appareils.</p>
+                <p>Diagnostic rapide, réparations de proximité et utilisation de pièces durables pour prolonger la durée de vie des équipements.</p>
             </div>
 
             <div class="card">
                 <h3>Reconditionnement</h3>
-                <p>Appareils testés, réparés et garantis, remis en circulation à prix accessibles.</p>
+                <p>Appareils testés, réparés, nettoyés et garantis, remis sur le marché à des prix accessibles pour tous.</p>
             </div>
 
             <div class="card">
-                <h3>Don & revalorisation</h3>
-                <p>Appareils fonctionnels donnés aux associations d'inclusion numérique.</p>
+                <h3>Don et revalorisation</h3>
+                <p>Les appareils encore fonctionnels sont revalorisés ou donnés à des structures d’inclusion numérique de la région.</p>
             </div>
         </div>
     </section>
 
-    <section id="impact">
-        <h2>Impact environnemental & social</h2>
+    <section id="offres">
+        <h2>Nos offres disponibles</h2>
         <p class="section-intro">
-            Chaque appareil réparé ou réemployé est un déchet électronique en moins.
+            Une sélection de PC portables reconditionnés et de services prêts à l’usage, pensés pour réduire l’empreinte carbone de vos usages numériques.
+        </p>
+
+        <div class="offer-grid">
+
+            <article class="card offer-card">
+                <div class="offer-header">
+                    <span class="offer-tag">-240 kg CO₂</span>
+                    <h3>Lenovo ThinkPad T480</h3>
+                    <p class="offer-spec">Intel i5 · 16 Go RAM · SSD 512 Go</p>
+                </div>
+                <p class="offer-text">Robuste, fiable, parfait pour les usages intensifs en entreprise ou à l’université.</p>
+                <ul class="offer-list">
+                    <li>Écran 14" Full HD</li>
+                    <li>Garantie 12 mois</li>
+                    <li>Charge rapide</li>
+                </ul>
+                <div class="offer-footer">
+                    <span class="offer-price">180 €</span>
+                    <button class="btn offer-btn" type="button">Réserver</button>
+                </div>
+            </article>
+
+            <article class="card offer-card">
+                <div class="offer-header">
+                    <span class="offer-tag">-190 kg CO₂</span>
+                    <h3>HP EliteBook 840</h3>
+                    <p class="offer-spec">Intel i7 · 16 Go RAM · SSD 512 Go</p>
+                </div>
+                <p class="offer-text">Puissant et léger, idéal pour les déplacements et les projets exigeants.</p>
+                <ul class="offer-list">
+                    <li>Écran 14" antireflet</li>
+                    <li>Clavier rétroéclairé</li>
+                    <li>Garantie 12 mois</li>
+                </ul>
+                <div class="offer-footer">
+                    <span class="offer-price">220 €</span>
+                    <button class="btn offer-btn" type="button">Réserver</button>
+                </div>
+            </article>
+
+            <article class="card offer-card">
+                <div class="offer-header">
+                    <span class="offer-tag">-210 kg CO₂</span>
+                    <h3>Dell Latitude 7490</h3>
+                    <p class="offer-spec">Intel i5 · 8 Go RAM · SSD 256 Go</p>
+                </div>
+                <p class="offer-text">Excellent rapport qualité/prix pour bureautique, web et visioconférence.</p>
+                <ul class="offer-list">
+                    <li>Écran 14"</li>
+                    <li>Wi-Fi et Bluetooth récents</li>
+                    <li>Garantie 6 mois</li>
+                </ul>
+                <div class="offer-footer">
+                    <span class="offer-price">160 €</span>
+                    <button class="btn offer-btn" type="button">Réserver</button>
+                </div>
+            </article>
+
+            <article class="card offer-card">
+                <div class="offer-header">
+                    <span class="offer-tag">-320 kg CO₂</span>
+                    <h3>MacBook Pro 13" 2019</h3>
+                    <p class="offer-spec">Intel i5 · 16 Go RAM · SSD 512 Go</p>
+                </div>
+                <p class="offer-text">Pour les créatifs : montage vidéo, design, développement, tout en restant mobile.</p>
+                <ul class="offer-list">
+                    <li>Écran Retina</li>
+                    <li>macOS préinstallé</li>
+                    <li>Garantie 12 mois</li>
+                </ul>
+                <div class="offer-footer">
+                    <span class="offer-price">390 €</span>
+                    <button class="btn offer-btn" type="button">Réserver</button>
+                </div>
+            </article>
+
+            <article class="card offer-card">
+                <div class="offer-header">
+                    <span class="offer-tag">Réparation</span>
+                    <h3>Forfait Écran cassé</h3>
+                    <p class="offer-spec">Smartphone / PC portable</p>
+                </div>
+                <p class="offer-text">Remplacement d’écran avec pièces de qualité, test complet avant restitution.</p>
+                <ul class="offer-list">
+                    <li>Diagnostic inclus</li>
+                    <li>Délai moyen : 48 h</li>
+                    <li>Garantie 3 mois</li>
+                </ul>
+                <div class="offer-footer">
+                    <span class="offer-price">89 €</span>
+                    <button class="btn offer-btn" type="button">Réserver</button>
+                </div>
+            </article>
+
+            <article class="card offer-card">
+                <div class="offer-header">
+                    <span class="offer-tag">Reprise + bonus</span>
+                    <h3>Pack Reprise &amp; Reconditionnement</h3>
+                    <p class="offer-spec">Ancien PC ou smartphone</p>
+                </div>
+                <p class="offer-text">On reprend votre ancien appareil, on le reconditionne et vous obtenez un avoir sur un modèle reconditionné.</p>
+                <ul class="offer-list">
+                    <li>Reprise jusqu’à 60 €</li>
+                    <li>Effacement sécurisé des données</li>
+                    <li>Traçabilité des composants</li>
+                </ul>
+                <div class="offer-footer">
+                    <span class="offer-price">À partir de 60 €</span>
+                    <button class="btn offer-btn" type="button">Simuler</button>
+                </div>
+            </article>
+
+            <article class="card offer-card">
+                <div class="offer-header">
+                    <span class="offer-tag">-230 kg CO₂</span>
+                    <h3>Asus ZenBook 14</h3>
+                    <p class="offer-spec">Intel i5 · 16 Go RAM · SSD 512 Go</p>
+                </div>
+                <p class="offer-text">Ultra-fin et léger, idéal pour les étudiants et consultants en mobilité.</p>
+                <ul class="offer-list">
+                    <li>Écran 14" IPS</li>
+                    <li>Autonomie jusqu’à 9 h</li>
+                    <li>Garantie 12 mois</li>
+                </ul>
+                <div class="offer-footer">
+                    <span class="offer-price">210 €</span>
+                    <button class="btn offer-btn" type="button">Réserver</button>
+                </div>
+            </article>
+
+            <article class="card offer-card">
+                <div class="offer-header">
+                    <span class="offer-tag">Bureau éco</span>
+                    <h3>PC Fixe Eco-Office</h3>
+                    <p class="offer-spec">Ryzen 5 · 16 Go RAM · SSD 512 Go</p>
+                </div>
+                <p class="offer-text">Un poste fixe reconditionné pour les petites structures et associations.</p>
+                <ul class="offer-list">
+                    <li>Unité centrale + écran 22"</li>
+                    <li>Clavier et souris inclus</li>
+                    <li>Garantie 12 mois</li>
+                </ul>
+                <div class="offer-footer">
+                    <span class="offer-price">260 €</span>
+                    <button class="btn offer-btn" type="button">Réserver</button>
+                </div>
+            </article>
+
+            <article class="card offer-card">
+                <div class="offer-header">
+                    <span class="offer-tag">Atelier</span>
+                    <h3>Atelier Numérique Responsable</h3>
+                    <p class="offer-spec">Intervention en lycée / association</p>
+                </div>
+                <p class="offer-text">Une demi-journée de sensibilisation à l’empreinte carbone du numérique et aux bons réflexes de réemploi.</p>
+                <ul class="offer-list">
+                    <li>Support pédagogique inclus</li>
+                    <li>Jusqu’à 30 participants</li>
+                    <li>Intervention en Occitanie</li>
+                </ul>
+                <div class="offer-footer">
+                    <span class="offer-price">150 €</span>
+                    <button class="btn offer-btn" type="button">Nous contacter</button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="impact">
+        <h2>Impact environnemental et social</h2>
+        <p class="section-intro">
+            Chaque appareil réparé ou réemployé est un déchet électronique en moins et une opportunité en plus pour le territoire.
         </p>
         <ul class="impact-list">
-            <li>🌱 Réduction des déchets électroniques</li>
-            <li>🔁 Promotion de l'économie circulaire</li>
-            <li>🤝 Soutien aux structures locales</li>
-            <li>⚡ Préservation des ressources rares</li>
+            <li>🌱 Réduction des déchets électroniques et de l’empreinte carbone.</li>
+            <li>🔁 Promotion concrète de l’économie circulaire.</li>
+            <li>🤝 Partenariats avec acteurs locaux et associations.</li>
+            <li>⚡ Limitation de l’extraction de ressources rares.</li>
         </ul>
     </section>
 
     <section id="eco">
         <h2>Modèle économique</h2>
         <p class="section-intro">
-            ReviveTech démarre avec un investissement de <strong>50 000 €</strong> financé par les associés.
+            ReviveTech démarre avec un investissement de <strong>50 000 €</strong> apporté par les associés.
+            L’objectif est d’atteindre un chiffre d’affaires prévisionnel de <strong>132 000 €</strong> dès la première année.
         </p>
 
         <div class="eco-grid">
             <div class="card eco-card">
                 <h3>Investissement initial</h3>
-                <p><strong>50 000 €</strong> en capital.</p>
+                <p>50 000 € d’apport en capital pour financer le matériel de réparation, le véhicule de collecte, le mobilier et le lancement.</p>
             </div>
 
             <div class="card eco-card">
                 <h3>Sources de revenus</h3>
                 <ul>
-                    <li>Ventes matériel reconditionné : <strong>100 000 €</strong></li>
-                    <li>Réparations : <strong>32 000 €</strong></li>
+                    <li>Vente de matériel reconditionné : 100 000 €</li>
+                    <li>Prestations de réparation : 32 000 €</li>
                 </ul>
             </div>
 
             <div class="card eco-card highlight">
-                <h3>Chiffre d'affaires estimé</h3>
+                <h3>Chiffre d’affaires estimé</h3>
                 <p class="big-number">132 000 €</p>
+                <p>sur la première année d’activité.</p>
             </div>
         </div>
     </section>
@@ -275,39 +294,95 @@
     <section id="equipe">
         <h2>L'équipe ReviveTech</h2>
         <p class="section-intro">
-            Une équipe engagée pour un numérique durable.
+            Une équipe pluridisciplinaire issue de formations complémentaires, réunie autour d’un même objectif : un numérique plus durable en Occitanie.
         </p>
 
-        <div class="cards">
-            <div class="card">
-                <h3>Responsable stratégique</h3>
-                <p>Analyse, vision, pilotage global.</p>
-            </div>
-
-            <div class="card">
-                <h3>Responsable technique</h3>
-                <p>Gestion du matériel et supervision des réparations.</p>
-            </div>
-
-            <div class="card">
-                <h3>Responsable financier</h3>
-                <p>Plan de financement et viabilité économique.</p>
-            </div>
-
-            <div class="card">
-                <h3>Développeur web</h3>
-                <p>Création du site et optimisation numérique responsable.</p>
+        <div class="card">
+            <h3 class="text-center">Nos profils</h3>
+            <div class="team-grid">
+                <div class="team-member">
+                    <h4>Abdesselem LAHDIR</h4>
+                    <p class="team-role">L2 MIASHS</p>
+                    <p>Développeur Web et Data</p>
+                </div>
+                <div class="team-member">
+                    <h4>Ridwane KRERI</h4>
+                    <p class="team-role">L2 MIASHS</p>
+                    <p>Développeur Web et Data</p>
+                </div>
+                <div class="team-member">
+                    <h4>Thomas BELAVAL</h4>
+                    <p class="team-role">BUT2 CG2P</p>
+                    <p>Contrôle de gestion</p>
+                </div>
+                <div class="team-member">
+                    <h4>Timéo BOUTEIL</h4>
+                    <p class="team-role">BUT2 GEMA</p>
+                    <p>Marketing et communication</p>
+                </div>
+                <div class="team-member">
+                    <h4>Loan LACOSTE</h4>
+                    <p class="team-role">BUT2 GC2F</p>
+                    <p>Analyse financière</p>
+                </div>
+                <div class="team-member">
+                    <h4>Erwan VOISE</h4>
+                    <p class="team-role">BUT2 GC2F</p>
+                    <p>Comptabilité et trésorerie</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <p class="section-intro">Envie d’en savoir plus ?</p>
+        <p class="section-intro">
+            Vous souhaitez en savoir plus sur ReviveTech, proposer un partenariat ou poser une question ?
+            Laissez-nous un message, nous vous répondrons au plus vite.
+        </p>
 
-        <div class="contact-box">
-            <p>📍 Basés en Occitanie</p>
-            <p>📧 <a href="mailto:contact@revivetech.fr">contact@revivetech.fr</a></p>
+        <div class="contact-box contact-box-form">
+            <form id="contactForm">
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="prenom">Prénom</label>
+                        <input type="text" id="prenom" name="prenom" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Adresse e-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="type">Vous êtes</label>
+                        <select id="type" name="type" required>
+                            <option value="">Sélectionner une option</option>
+                            <option value="particulier">Un particulier</option>
+                            <option value="tpe">Une TPE / PME</option>
+                            <option value="association">Une association / école</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label for="message">Votre message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <p class="form-info">
+                    Les informations saisies sont utilisées uniquement dans le cadre de ce projet pédagogique.
+                </p>
+
+                <button type="submit" class="btn btn-full">Envoyer le message</button>
+                <p id="contactFeedback" class="form-feedback"></p>
+            </form>
         </div>
     </section>
 </main>
@@ -315,8 +390,50 @@
 <button id="backToTop">↑</button>
 
 <footer>
-    <p>© 2025 ReviveTech – Numérique durable & écoresponsable</p>
+    <p>© 2025 ReviveTech – Numérique durable et écoresponsable</p>
 </footer>
+
+<!-- MODAL DE RÉSERVATION -->
+<div id="reservationModal" class="modal">
+    <div class="modal-panel">
+        <button type="button" class="modal-close" aria-label="Fermer">×</button>
+        <h3>Réserver cette offre</h3>
+        <p class="modal-offer">
+            Offre sélectionnée :
+            <span id="modalOfferTitle"></span> – <span id="modalOfferPrice"></span>
+        </p>
+
+        <form id="reservationForm">
+            <div class="form-grid">
+                <div class="form-field">
+                    <label for="resPrenom">Prénom</label>
+                    <input type="text" id="resPrenom" name="resPrenom" required>
+                </div>
+                <div class="form-field">
+                    <label for="resNom">Nom</label>
+                    <input type="text" id="resNom" name="resNom" required>
+                </div>
+                <div class="form-field">
+                    <label for="resEmail">E-mail</label>
+                    <input type="email" id="resEmail" name="resEmail" required>
+                </div>
+                <div class="form-field">
+                    <label for="resTel">Téléphone</label>
+                    <input type="tel" id="resTel" name="resTel" placeholder="Optionnel">
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label for="resComment">Commentaire</label>
+                <textarea id="resComment" name="resComment" rows="3" placeholder="Précisez vos besoins (optionnel)"></textarea>
+            </div>
+
+            <p id="reservationFeedback" class="form-feedback"></p>
+
+            <button type="submit" class="btn btn-full">Confirmer la réservation</button>
+        </form>
+    </div>
+</div>
 
 <script src="script.js"></script>
 </body>
