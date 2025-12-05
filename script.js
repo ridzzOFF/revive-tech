@@ -1,4 +1,3 @@
-// NAV : scroll fluide
 document.querySelectorAll('nav a[href^="#"]').forEach(function (link) {
     link.addEventListener('click', function (e) {
         e.preventDefault();
@@ -10,7 +9,6 @@ document.querySelectorAll('nav a[href^="#"]').forEach(function (link) {
     });
 });
 
-// BOUTON RETOUR EN HAUT
 var backToTopBtn = document.getElementById('backToTop');
 
 window.addEventListener('scroll', function () {
@@ -25,7 +23,6 @@ backToTopBtn.addEventListener('click', function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// THEME SOMBRE
 var themeToggle = document.getElementById('themeToggle');
 var savedTheme = localStorage.getItem('revivetech-theme');
 
@@ -43,7 +40,6 @@ themeToggle.addEventListener('click', function () {
     localStorage.setItem('revivetech-theme', isDark ? 'dark' : 'light');
 });
 
-// FORMULAIRE CONTACT
 var contactForm = document.getElementById('contactForm');
 var contactFeedback = document.getElementById('contactFeedback');
 
@@ -71,9 +67,6 @@ if (contactForm) {
     });
 }
 
-// ---- RÉSERVATION DES OFFRES ----
-
-// éléments du modal
 var reservationModal = document.getElementById('reservationModal');
 var modalOfferTitle = document.getElementById('modalOfferTitle');
 var modalOfferPrice = document.getElementById('modalOfferPrice');
@@ -83,7 +76,6 @@ var reservationFeedback = document.getElementById('reservationFeedback');
 var currentOfferTitle = '';
 var currentOfferPrice = '';
 
-// ouvrir le modal pour une offre
 function openReservationModal(title, price) {
     currentOfferTitle = title;
     currentOfferPrice = price;
@@ -103,12 +95,10 @@ function openReservationModal(title, price) {
     reservationModal.classList.add('open');
 }
 
-// fermer le modal
 function closeReservationModal() {
     reservationModal.classList.remove('open');
 }
 
-// clic sur les boutons "Réserver" / "Simuler" / "Nous contacter"
 document.querySelectorAll('.offer-btn').forEach(function (btn) {
     btn.addEventListener('click', function () {
         var card = btn.closest('.offer-card');
@@ -126,14 +116,12 @@ document.querySelectorAll('.offer-btn').forEach(function (btn) {
     });
 });
 
-// boutons de fermeture du modal
 document.querySelectorAll('.modal-close').forEach(function (btn) {
     btn.addEventListener('click', function () {
         closeReservationModal();
     });
 });
 
-// clic sur le fond sombre pour fermer
 reservationModal.addEventListener('click', function (e) {
     if (e.target === reservationModal) {
         closeReservationModal();
@@ -184,10 +172,8 @@ if (reservationForm)
     });
 }
 
-// Mot de passe admin
 const ADMIN_PASSWORD = "gg";
 
-// Vérification du mot de passe
 function loginAdmin() {
     const entered = prompt("Entrez le code admin :");
 
@@ -199,7 +185,6 @@ function loginAdmin() {
     }
 }
 
-// Charger toutes les réservations
 function loadReservations() {
     const container = document.getElementById("reservationsList");
     container.innerHTML = "";
@@ -228,8 +213,6 @@ function loadReservations() {
         container.appendChild(div);
     });
 }
-
-// Supprimer une réservation
 function deleteReservation(index) {
     const reservations = JSON.parse(localStorage.getItem("reservations")) || [];
     reservations.splice(index, 1);
